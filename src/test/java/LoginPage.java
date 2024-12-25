@@ -13,7 +13,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver webDriver) {
         this.webDriver = webDriver;
-        this.wait = new WebDriverWait(webDriver, Duration.ofSeconds(7));
+        this.wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
     }
 
     public void login(String username, String password) throws InterruptedException {

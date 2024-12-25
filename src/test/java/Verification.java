@@ -37,7 +37,8 @@ public class Verification {
     public void verifyWorkspaceName(WebElement element, String expectedName) {
         try {
             String actualName = element.getText();
-            assertEquals(expectedName, actualName);
+            assertEquals(actualName, expectedName);
+            System.out.println("Workspace created with the correct name");
         } catch (AssertionError e) {
             System.out.println("Assertion failed: " + e.getMessage());
         }
