@@ -20,7 +20,7 @@ public class Test {
 
             verification.isIconCreated("//ul[@class]/li");
 
-            WebElement name = driver.findElement(By.xpath("//p[contains(@class, 'typo-small-medium')]"));
+            WebElement name = driver.findElement(By.xpath("//p[contains(@class, 'typo-small-medium')][following-sibling::ul]"));
             verification.verifyWorkspaceName(name, workspaceName);
 
             workspace.deleteWorkspace(workspaceName);
